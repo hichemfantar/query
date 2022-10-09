@@ -1,6 +1,9 @@
 {
   "name": "query",
   "repository": "https://github.com/tanstack/query.git",
+  "engines": {
+    "node":">=16.14.2"
+  },
   "scripts": {
     "preinstall": "if [ \"$CI\" = \"true\" ]; then echo \"Skipping preinstall...\"; else npx -y only-allow pnpm; fi",
     "install:csb": "pnpm install --frozen-lockfile",
